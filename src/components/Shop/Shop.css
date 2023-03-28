@@ -1,0 +1,19 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 45px;
+    margin-top: 88px;
+    margin-left: 113px;
+}
+
+.cart-container{
+    border: 2px solid tan;
+    border-top: 0px;
+    height: 1170px;
+    text-align: center;
+}
