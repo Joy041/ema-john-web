@@ -6,6 +6,7 @@
     padding-right: 97px;
     background-color: #1C2B35;
     height: 80px;
+    position: sticky;
 }
 
 .header-info a{

@@ -1,0 +1,26 @@
+.review-field{
+    border: 2px solid gray;
+    width: 800px;
+    margin-bottom: 20px;
+    /* padding: auto 10px; */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.review-field img{
+    width: 85px;
+    margin: 25px 0px 0px 15px;
+    border-radius: 5px; 
+}
+
+.review-span{
+    color: #FF9900;
+}
+
+.review-btn{
+    margin: 35px;
+    background-color: rgb(240, 167, 167);
+    border-radius: 40px;
+    color: rgb(246, 72, 72);
+    border: 0;
+}
