@@ -2,3 +2,19 @@
     margin-top: 0px;
     padding-top: 55px;
 }
+
+.clear-cart-btn{
+    width: 400px;
+    height: 50px;
+    margin: 10px 20px;
+    font-size: 21px;
+    background-color: rgb(253, 53, 53);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-margin{
+    margin-left: 43px;
+}

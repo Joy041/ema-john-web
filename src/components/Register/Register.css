@@ -1,0 +1,15 @@
+.register-form-container{
+    width: 500px;
+    height: 660px;
+    margin: 20px auto;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: rgb(48, 115, 48);
+}

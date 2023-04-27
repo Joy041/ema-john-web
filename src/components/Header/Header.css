@@ -7,6 +7,7 @@
     background-color: #1C2B35;
     height: 80px;
     position: sticky;
+    top: 0;
 }
 
 .header-info a{
@@ -16,4 +17,16 @@
 
 .header-info a:hover{
     color: orange;
+}
+
+.logout{
+    background-color: #1C2B35;
+    color: white;
+    padding: 0;
+    border: 0;
+}
+
+.logout:hover{
+    color: orange;
+    border: 0;
 }

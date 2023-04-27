@@ -14,9 +14,21 @@
 .cart-container{
     background-color: #FFE0B3;
     padding-top: 0px;
-    padding-left: 43px;
+    /* padding-left: 43px; */
     padding-bottom: 50px;
     position: sticky;
-    top : 0;
+    top : 80px;
     height: 500px;
+}
+
+.cart-proses-btn{
+    width: 400px;
+    height: 50px;
+    margin: 10px 20px;
+    font-size: 21px;
+    background-color: #FF9900;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
