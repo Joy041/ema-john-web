@@ -4,17 +4,16 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
+    const [show, setShow] = useState(false)
+    const location = useLocation()
+
+    const from = location.state?.from?.pathname || '/'
+
     const [error, setError] = useState('')
     const [success, setSuccess] = useState('')
-    const { login, forgetPassword, googleSignIn } = useContext(UserContext)
+    const { login, forgetPassword, googleSignIn, user } = useContext(UserContext)
     const emailRef = useRef();
     const navigate = useNavigate()
-    const location = useLocation()
-    console.log(location)
-
-    const from = location.state?.from?.pathname || '/';
-
-    console.log(from)
 
 
     const handelLoginForm = (event) => {
@@ -61,6 +60,7 @@ const Login = () => {
             const loggedUser = result.user;
             console.log(loggedUser)
             setSuccess('Login successfully')
+            navigate(from, { replace: true })
         })
         .catch(error => {
             setError(error.message)
@@ -77,7 +77,12 @@ const Login = () => {
                 </div>
                 <div className='form-control'>
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="inputPassword1" required />
+                    <input type= {show ? 'text' : 'password'} name="password" id="inputPassword1" required />
+                    <p onClick={ () => setShow(!show)} > 
+                        {
+                           show ? <small>Hide password</small> : <small>Show password</small>
+                        }
+                    </p>
                 </div>
                 <button onClick={handelForgetPass} className='forgetPass'>Forget password</button>
                 <p className='error'>{error}</p>

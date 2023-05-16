@@ -28,10 +28,10 @@ const Cart = ({ cart, clearCartData, children }) => {
             <p className='cart-margin'>Tax : {tax}</p>
             <p className='cart-margin' style={{ fontSize: '20px' }}>Grand Total : {grandTotal}</p>
             <button onClick={clearCartData} className='clear-cart-btn'>
-                <span>Clear Cart</span>            
+                <span>Clear Cart</span>
                 <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon>
-                </button>
-                {children}
+            </button>
+            {children}
         </div>
     );
 };

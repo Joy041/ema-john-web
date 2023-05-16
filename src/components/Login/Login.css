@@ -1,6 +1,8 @@
 .form-container {
     width: 500px;
-    height: 600px;
+    height: 650px;
+    height: 650px;
+    height: 650px;
     margin: 20px auto;
     border: 1px solid #95A0A7;
     border-radius: 8px;
@@ -68,4 +70,12 @@
     border: 0;
     background-color: white;
     text-decoration: underline;
+}
+
+.forgetPass:hover{
+    border: 0;
+}
+
+.forgetPass:target{
+    border: 0;
 }
